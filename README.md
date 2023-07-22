@@ -4,7 +4,7 @@
 
 This is a custom function that allows you to passively check the spelling of individual cells in Google Sheets, using [Google Apps Script](https://developers.google.com/apps-script). To use this function in your spreadsheet, paste the script into that spreadsheet's Google Apps Script settings, then access it with the function name `SPCHECK`.
 
-[View the script's source code on Github](https://gist.github.com/caesiumtea/b12eb458e18b6e61d56bf149bf29fe3e) or [below](#source-code).  
+View the script's source code in the [Code.gs](Code.gs) file in this repo.  
 
 > Warning: This is a very hacky solution, which relies on making HTTP requests to a dictionary website. Which, idk, might not be great netiquette. It is not intended for long-term use or for applying to very large spreadsheets.  
 
@@ -26,7 +26,7 @@ The script must be added to each spreadsheet where you want to use it.
 1. Open your spreadsheet in Google Sheets.
 2. In the menu, select `Extensions > Apps Script`.
 3. You should see a text editor with a file named `Code.gs`. Delete any existing text in `Code.gs`.
-4. Select the entire script text, paste it into `Code.gs`, and save. You should not need to select Deploy.
+4. Select the entire text of [Code.gs](Code.gs), paste it into the `Code.gs` on your Google Sheet, and save. You should not need to select Deploy.
 
 You should now have a new function named `SPCHECK` available in your spreadsheet. 
 
